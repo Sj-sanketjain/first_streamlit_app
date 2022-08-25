@@ -1,4 +1,5 @@
 import streamlit
+import pandas
 
 streamlit.title('My Parents Healthy Diner')
 
@@ -10,7 +11,7 @@ streamlit.text ('Avacado Toast')
 
 streamlit.header('Make your Own Smoothie')
 
-import Pandas
+
 
 My_Furit_List=Pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 
