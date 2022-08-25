@@ -9,3 +9,9 @@ streamlit.text('Hard-Boiled Free Range Eggs')
 streamlit.text ('Avacado Toast')
 
 streamlit.header('Make your Own Smoothie')
+
+Import Pandas
+
+My_Furit_List=Pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+
+streamlit.dataframe(My_Furit_List)
