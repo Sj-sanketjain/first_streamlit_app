@@ -39,7 +39,7 @@ try:
 except URLError as e:
  streamlit.error()
 
-streamlit.text("View Our Fruit List - Add Your Favorites!")
+streamlit.header("View Our Fruit List - Add Your Favorites!")
 # snowflake-relate-functions
 def get_fruit_load_list():
    with my_cnx.cursor() as my_cur:
@@ -66,7 +66,3 @@ if streamlit.button('Add Fruit to Load List'):
    my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
    back_from_function = insert_row_snowflake(add_my_fruit)
    stremlit.text(back_from_function)
-
-streamlit.write('The user entered ', add_my_fruit)
-
-
